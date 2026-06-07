@@ -1,0 +1,40 @@
+### Create Student
+POST http://localhost:8080/api/students
+Content-Type: application/json
+
+{
+  "name": "Vinay Sharma",
+  "dateOfBirth": "1999-08-15",
+  "gender": "Male",
+  "studentCode": "STU002",
+  "email": "vinay@gmail.com",
+  "mobileNumber": "9876543211",
+  "parentName": "Rajesh Sharma",
+  "addresses": [],
+  "courses": []
+}
+
+###
+
+### Get All Students
+GET http://localhost:8080/api/students
+
+###
+
+### Get Student By ID
+GET http://localhost:8080/api/students/1
+
+###
+
+### Search Student
+GET http://localhost:8080/api/students/search?name=Raghav
+
+###
+
+### Pagination
+GET http://localhost:8080/api/students/page?page=0&size=2
+
+###
+
+### Sorting
+GET http://localhost:8080/api/students/sort?field=name
